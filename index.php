@@ -1,5 +1,7 @@
 <?php
 
+$censura = "";
+
 $paragrafo = 'Ei fu. Siccome immobile,
                 dato il mortal sospiro,
                 stette la spoglia immemore 
@@ -109,7 +111,6 @@ $paragrafo = 'Ei fu. Siccome immobile,
                 sulla deserta coltrice
                 accanto a lui posò .'
 
-
 ?>
 
 
@@ -126,15 +127,17 @@ $paragrafo = 'Ei fu. Siccome immobile,
     <div class="text-center w-75 m-auto mt-5">
         <h1 class="mb-5">Il cinque maggio</h1>
         <?php echo $paragrafo ?>
-
-        <form action="" class="">
+        <p class="mt-5"> La lunghezza del paragrafo è <?php echo strlen($paragrafo) ?> caratteri </p>
+        <form action="" class="" method="GET">
             <label for="" class="text-primary fw-bold">Scrivi la parola da censurare</label>
-            <input type="text" name="" id="" class="mt-4">
+            <input type="text" name="censuraparola" id="" class="mt-4" placeholders="inserisci qui...">
             <button type="button" class="btn btn-primary">Primary</button>
 
         </form>
 
+        
 
+        
     </div>
 
 
